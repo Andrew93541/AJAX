@@ -93,6 +93,7 @@ button:hover {
 }
 
 .modal-content {
+    background: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -125,7 +126,7 @@ button:hover {
 /* Dark Mode */
 .dark-mode {
     background-color: #222;
-    color: #fff;
+    color: black;
 }
 
 .dark-mode .container {
