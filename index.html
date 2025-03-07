@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX API Fetch Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AJAX API Fetch Example</h2>
+        
+        <input type="text" id="searchInput" placeholder="Search users..." onkeyup="searchUsers()">
+        <button id="fetchData">Load Users</button>
+        
+        <button id="toggleTheme">🌙 Toggle Dark Mode</button>
+
+        <div id="loader" class="hidden">Loading...</div>
+        <div id="dataDisplay"></div>
+
+        <button id="loadMore" class="hidden">Load More</button>
+    </div>
+
+    <!-- Modal for User Details -->
+    <div id="userModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalAvatar" src="" alt="User Avatar">
+            <h3 id="modalName"></h3>
+            <p id="modalUsername"></p>
+            <p id="modalBio"></p>
+            <a id="modalProfile" href="#" target="_blank">View GitHub Profile</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
